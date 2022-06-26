@@ -5,10 +5,10 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 
-driver = webdriver.Chrome('C:/Users/csh09/PycharmProjects/etf/chromedriver.exe')
-file_etf_holding = open('C:/Users/csh09/PycharmProjects/etf/etf_holding_list.txt','w+',encoding="utf-8")
+driver = webdriver.Chrome('/Users/sunghwanchoi/development/python/chromedriver')
+file_etf_holding = open('/Users/sunghwanchoi/development/python/ETF/etf_holding_list.txt','w+',encoding="utf-8")
 
-with open('C:/Users/csh09/PycharmProjects/etf/etfDataFundBasics.txt', 'r', encoding="utf-8") as f_etf:
+with open('/Users/sunghwanchoi/development/python/ETF/FundBasics.txt', 'r', encoding="utf-8") as f_etf:
     data_etf = f_etf.read()
 file_etf_list = data_etf.splitlines()
 cnt = 0
